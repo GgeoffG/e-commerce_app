@@ -1,4 +1,4 @@
-#E-Commerce Database App
+# E-Commerce Database App
 
   <!-- TABLE OF CONTENTS -->
   <details>
