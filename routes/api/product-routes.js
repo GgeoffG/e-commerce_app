@@ -111,12 +111,14 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
-    await Tag.destroy({
+    await Product.destroy({
       where: {
         id: req.params.id,
       },
     });
-    res.status(200).json({ message: `Tag with id: ${req.params.id} deleted` });
+    res
+      .status(200)
+      .json({ message: `Product with id: ${req.params.id} deleted` });
   } catch (err) {
     res.status(500).json(err);
   }
